@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>發财中国福利一</string>
+		<key>image</key>
+		<string>sf_main_newpreheat_hero</string>
+		<key>rain_next_image_url</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>rain_next_image_url</key>
+		<string>https://mh.snssdk.com/festival/activity/desc_mahjong/landing_page/</string>
+		<key>title</key>
+		<string>發财中国福利二</string>
+		<key>image</key>
+		<string>sf_main_newpreheat_mah</string>
+	</dict>
+	<dict>
+		<key>rain_next_image_url</key>
+		<string>https://mh.snssdk.com/festival/activity/desc_rain/landing_page/</string>
+		<key>title</key>
+		<string>發财中国福利三</string>
+		<key>image</key>
+		<string>sf_main_newpreheat_rp</string>
+	</dict>
+	<dict>
+		<key>rain_next_image_url</key>
+		<string>https://mh.snssdk.com/festival/activity/invite/index/landing_page/</string>
+		<key>title</key>
+		<string>發财中国福利四</string>
+		<key>image</key>
+		<string>sf_main_newpreheat_invite</string>
+	</dict>
+	<dict>
+		<key>rain_next_image_url</key>
+		<string>https://mh.snssdk.com/festival/activity/desc_video/landing_page/</string>
+		<key>title</key>
+		<string>發财中国福利五</string>
+		<key>image</key>
+		<string>sf_main_newpreheat_video</string>
+	</dict>
+</array>
+</plist>

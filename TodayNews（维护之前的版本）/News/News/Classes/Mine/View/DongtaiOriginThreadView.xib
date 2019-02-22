@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DongtaiOriginThreadView" customModule="News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpP-ag-t50">
+                    <rect key="frame" x="15" y="10" width="345" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="tFp-4j-3Sm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pps-jw-joq" customClass="DongtaiCollectionView" customModule="News" customModuleProvider="target">
+                    <rect key="frame" x="15" y="10" width="0.0" height="18"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="QGK-mq-9bI"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uhJ-EL-Yti">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pps-jw-joq" secondAttribute="bottom" constant="10" id="36U-QV-gXt"/>
+                <constraint firstItem="pps-jw-joq" firstAttribute="top" secondItem="CpP-ag-t50" secondAttribute="bottom" id="DBA-VJ-5mu"/>
+                <constraint firstItem="CpP-ag-t50" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="H4i-wM-YIj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CpP-ag-t50" secondAttribute="trailing" constant="15" id="PEf-9t-6rH"/>
+                <constraint firstItem="CpP-ag-t50" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="rXh-bc-K7T"/>
+                <constraint firstItem="pps-jw-joq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="vST-DM-xqW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionView" destination="pps-jw-joq" id="jGL-F6-Qg2"/>
+                <outlet property="collectionViewWidth" destination="QGK-mq-9bI" id="0bv-hw-m7A"/>
+                <outlet property="contentLabel" destination="CpP-ag-t50" id="z5T-Ze-vit"/>
+                <outlet property="contentLabelHeight" destination="tFp-4j-3Sm" id="VOm-bd-MhR"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="316"/>
+        </view>
+    </objects>
+</document>

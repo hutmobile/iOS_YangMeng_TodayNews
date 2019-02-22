@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EmojiCollectionCell" customModule="News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="158" height="112"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfX-JA-JBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="158" height="112"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JfX-JA-JBQ" secondAttribute="trailing" id="KRO-Y5-hmP"/>
+                <constraint firstItem="JfX-JA-JBQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T7j-MQ-FoK"/>
+                <constraint firstAttribute="bottom" secondItem="JfX-JA-JBQ" secondAttribute="bottom" id="m7Y-cR-0Fm"/>
+                <constraint firstItem="JfX-JA-JBQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yie-YR-RoO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="158" height="112"/>
+            <connections>
+                <outlet property="iconButton" destination="JfX-JA-JBQ" id="sNy-y8-f62"/>
+            </connections>
+            <point key="canvasLocation" x="88" y="161"/>
+        </collectionViewCell>
+    </objects>
+</document>

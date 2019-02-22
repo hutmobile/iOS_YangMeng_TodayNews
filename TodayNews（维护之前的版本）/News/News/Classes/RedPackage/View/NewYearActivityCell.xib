@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="145" id="KGk-i7-Jjw" customClass="NewYearActivityCell" customModule="News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sf_main_newpreheat_hero" translatesAutoresizingMaskIntoConstraints="NO" id="FW8-Cr-Wrq">
+                        <rect key="frame" x="0.0" y="16.5" width="320" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="FW8-Cr-Wrq" secondAttribute="height" multiplier="2.5:1" id="aoG-4v-3XN"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sf_main_newpreheat_left" translatesAutoresizingMaskIntoConstraints="NO" id="axu-eR-fgx">
+                        <rect key="frame" x="61.5" y="18" width="28" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="XvB-h9-aVC"/>
+                            <constraint firstAttribute="width" constant="28" id="bn1-r7-Gbo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="發财中国福利一" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uH-Mq-NLq">
+                        <rect key="frame" x="99.5" y="6.5" width="121.5" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="iVt-t6-fAF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.078431372549019607" blue="0.10588235294117647" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sf_main_newpreheat_right" translatesAutoresizingMaskIntoConstraints="NO" id="z8k-Tq-4kF">
+                        <rect key="frame" x="231" y="17.5" width="28" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="7lV-LF-iuf"/>
+                            <constraint firstAttribute="height" constant="7" id="TTg-lG-iUY"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.99607843137254903" green="0.90196078431372551" blue="0.81176470588235294" alpha="1" colorSpace="deviceRGB"/>
+                <constraints>
+                    <constraint firstItem="FW8-Cr-Wrq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="118-y8-0sh"/>
+                    <constraint firstAttribute="bottom" secondItem="FW8-Cr-Wrq" secondAttribute="bottom" id="DyP-jx-mYM"/>
+                    <constraint firstItem="z8k-Tq-4kF" firstAttribute="leading" secondItem="0uH-Mq-NLq" secondAttribute="trailing" constant="10" id="Fh8-mP-13q"/>
+                    <constraint firstItem="0uH-Mq-NLq" firstAttribute="leading" secondItem="axu-eR-fgx" secondAttribute="trailing" constant="10" id="KPi-b4-OhL"/>
+                    <constraint firstItem="0uH-Mq-NLq" firstAttribute="centerY" secondItem="axu-eR-fgx" secondAttribute="centerY" id="YSW-WI-0M1"/>
+                    <constraint firstItem="z8k-Tq-4kF" firstAttribute="centerY" secondItem="0uH-Mq-NLq" secondAttribute="centerY" id="cjN-Dc-sDM"/>
+                    <constraint firstItem="0uH-Mq-NLq" firstAttribute="top" secondItem="FW8-Cr-Wrq" secondAttribute="top" constant="-10" id="dBY-FY-edh"/>
+                    <constraint firstItem="0uH-Mq-NLq" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="jeI-xE-HzH"/>
+                    <constraint firstAttribute="trailing" secondItem="FW8-Cr-Wrq" secondAttribute="trailing" id="kDD-qL-G5x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mainImageView" destination="FW8-Cr-Wrq" id="8HX-cr-orb"/>
+                <outlet property="titleLabel" destination="0uH-Mq-NLq" id="vCQ-dI-uAy"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="3.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sf_main_newpreheat_hero" width="375" height="150"/>
+        <image name="sf_main_newpreheat_left" width="28" height="7"/>
+        <image name="sf_main_newpreheat_right" width="28" height="7"/>
+    </resources>
+</document>

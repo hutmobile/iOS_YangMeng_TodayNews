@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserDetailNavigationBar" customModule="News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmP-p0-86h">
+                    <rect key="frame" x="0.0" y="-44" width="375" height="88"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaV-7M-h1A">
+                    <rect key="frame" x="0.0" y="4.5" width="35" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="N9T-5r-gkj"/>
+                        <constraint firstAttribute="height" constant="35" id="aHi-vI-Kpg"/>
+                    </constraints>
+                    <state key="normal" image="personal_home_back_white_24x24_"/>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzh-Fs-qTx">
+                    <rect key="frame" x="152" y="11.5" width="70" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="agA-vO-SUz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1S-le-f2V" customClass="AnimatableButton" customModule="IBAnimatable">
+                    <rect key="frame" x="232" y="8.5" width="72" height="28"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.3921568627" blue="0.37254901959999998" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="Pdt-dL-Oj6"/>
+                        <constraint firstAttribute="width" constant="72" id="dL4-YU-9CL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="关注"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="concernButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="FVT-HX-uTe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6g-0k-pvw">
+                    <rect key="frame" x="340" y="4.5" width="35" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Bbs-MH-jPe"/>
+                        <constraint firstAttribute="width" constant="35" id="uFp-CC-vNo"/>
+                    </constraints>
+                    <state key="normal" image="new_morewhite_titlebar_22x22_"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HmP-p0-86h" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="2vu-oa-0mc"/>
+                <constraint firstItem="Jzh-Fs-qTx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5bX-Xw-zah"/>
+                <constraint firstItem="Jzh-Fs-qTx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="A6O-oH-xrr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n6g-0k-pvw" secondAttribute="trailing" id="Dhi-4J-pL7"/>
+                <constraint firstItem="HmP-p0-86h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fq0-At-BtW"/>
+                <constraint firstItem="y1S-le-f2V" firstAttribute="centerY" secondItem="Jzh-Fs-qTx" secondAttribute="centerY" id="MXg-WE-z9X"/>
+                <constraint firstItem="HmP-p0-86h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-44" id="OT4-RJ-xQU"/>
+                <constraint firstItem="n6g-0k-pvw" firstAttribute="centerY" secondItem="zaV-7M-h1A" secondAttribute="centerY" id="PnK-Lv-oru"/>
+                <constraint firstItem="zaV-7M-h1A" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VoC-dB-fPA"/>
+                <constraint firstItem="zaV-7M-h1A" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sQG-0q-9RP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HmP-p0-86h" secondAttribute="trailing" id="uNM-fm-KJu"/>
+                <constraint firstItem="y1S-le-f2V" firstAttribute="leading" secondItem="Jzh-Fs-qTx" secondAttribute="trailing" constant="10" id="zN2-NE-qk0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="concernButton" destination="y1S-le-f2V" id="gix-Dr-wMy"/>
+                <outlet property="moreButton" destination="n6g-0k-pvw" id="lmk-J1-RBX"/>
+                <outlet property="nameLabel" destination="Jzh-Fs-qTx" id="GRQ-KM-n7n"/>
+                <outlet property="navigationBar" destination="HmP-p0-86h" id="8kf-x6-syD"/>
+                <outlet property="navigationBarTop" destination="OT4-RJ-xQU" id="XP0-c2-rx8"/>
+                <outlet property="returnButton" destination="zaV-7M-h1A" id="hLx-DR-GV8"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="203.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="new_morewhite_titlebar_22x22_" width="22" height="22"/>
+        <image name="personal_home_back_white_24x24_" width="24" height="24"/>
+    </resources>
+</document>

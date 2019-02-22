@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailViewController2" customModule="News" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomViewBottom" destination="tMQ-N2-o7s" id="oC4-CX-j1B"/>
+                <outlet property="bottomViewHeight" destination="aSp-pA-UJE" id="HMz-GT-cs5"/>
+                <outlet property="bottomview" destination="nXk-6o-x1H" id="3fZ-G0-JY6"/>
+                <outlet property="tableView" destination="Fa2-2H-I2r" id="E1I-z2-Xyp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXk-6o-x1H">
+                    <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="aSp-pA-UJE"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="1" estimatedRowHeight="-1" sectionHeaderHeight="40" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fa2-2H-I2r" customClass="UserDetailTableView" customModule="News" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sOm-32-vsH"/>
+                        <outlet property="delegate" destination="-1" id="N6X-tB-asJ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nXk-6o-x1H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EJF-hE-MKu"/>
+                <constraint firstItem="Fa2-2H-I2r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P2u-b1-Mcq"/>
+                <constraint firstItem="Fa2-2H-I2r" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jWu-wm-ZXG"/>
+                <constraint firstAttribute="trailing" secondItem="nXk-6o-x1H" secondAttribute="trailing" id="p4m-d0-3sw"/>
+                <constraint firstItem="nXk-6o-x1H" firstAttribute="top" secondItem="Fa2-2H-I2r" secondAttribute="bottom" id="sDA-0k-xXT"/>
+                <constraint firstAttribute="bottom" secondItem="nXk-6o-x1H" secondAttribute="bottom" id="tMQ-N2-o7s"/>
+                <constraint firstAttribute="trailing" secondItem="Fa2-2H-I2r" secondAttribute="trailing" id="vKi-YD-kn2"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

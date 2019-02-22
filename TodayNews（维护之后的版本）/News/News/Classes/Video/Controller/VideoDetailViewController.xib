@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoDetailViewController" customModule="News" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="aKM-YT-W3c" id="btk-zE-tiu"/>
+                <outlet property="loveButton" destination="3Cy-cr-l8g" id="eYh-0g-4CI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKM-YT-W3c">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jN-w7-qn0">
+                            <rect key="frame" x="330" y="0.0" width="45" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="flX-U9-KrR"/>
+                            </constraints>
+                            <state key="normal" image="tab_share_24x24_"/>
+                            <connections>
+                                <action selector="shareButtonClicked:" destination="-1" eventType="touchUpInside" id="Exd-Pp-17r"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcY-As-eds">
+                            <rect key="frame" x="240" y="0.0" width="45" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="3HP-R4-aSB"/>
+                            </constraints>
+                            <state key="normal" image="comment_video_20x20_"/>
+                            <connections>
+                                <action selector="commentButtonClicked:" destination="-1" eventType="touchUpInside" id="TLl-cM-J7D"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyK-eI-09u" customClass="AnimatableView" customModule="IBAnimatable">
+                            <rect key="frame" x="15" y="5" width="205" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNS-3o-EmL">
+                                    <rect key="frame" x="10" y="0.0" width="67" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="写评论" image="write_new_24x24_">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-H3-Y7i">
+                                    <rect key="frame" x="0.0" y="0.0" width="205" height="30"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SW-yM-h1f">
+                                    <rect key="frame" x="173" y="0.0" width="32" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="32" id="t15-A8-Ycc"/>
+                                    </constraints>
+                                    <state key="normal" image="tabbar_icon_emoji_24x24_"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="qNS-3o-EmL" firstAttribute="leading" secondItem="pyK-eI-09u" secondAttribute="leading" constant="10" id="5NZ-5n-uxZ"/>
+                                <constraint firstItem="7SW-yM-h1f" firstAttribute="top" secondItem="pyK-eI-09u" secondAttribute="top" id="AvC-Gy-BxW"/>
+                                <constraint firstAttribute="bottom" secondItem="lT8-H3-Y7i" secondAttribute="bottom" id="BAy-dI-lFW"/>
+                                <constraint firstAttribute="bottom" secondItem="7SW-yM-h1f" secondAttribute="bottom" id="Gia-KB-HMA"/>
+                                <constraint firstAttribute="trailing" secondItem="7SW-yM-h1f" secondAttribute="trailing" id="Zzd-1o-f70"/>
+                                <constraint firstItem="lT8-H3-Y7i" firstAttribute="top" secondItem="pyK-eI-09u" secondAttribute="top" id="aG8-hp-YLt"/>
+                                <constraint firstAttribute="trailing" secondItem="lT8-H3-Y7i" secondAttribute="trailing" id="bHh-eR-SOO"/>
+                                <constraint firstAttribute="bottom" secondItem="qNS-3o-EmL" secondAttribute="bottom" id="bsc-SJ-h1H"/>
+                                <constraint firstAttribute="height" constant="30" id="kwO-6n-y5T"/>
+                                <constraint firstItem="lT8-H3-Y7i" firstAttribute="leading" secondItem="pyK-eI-09u" secondAttribute="leading" id="mcq-om-Qf4"/>
+                                <constraint firstItem="qNS-3o-EmL" firstAttribute="top" secondItem="pyK-eI-09u" secondAttribute="top" id="xX8-SE-aMO"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cy-cr-l8g">
+                            <rect key="frame" x="285" y="0.0" width="45" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="AmE-gT-hpa"/>
+                            </constraints>
+                            <state key="normal" image="love_video_20x20_"/>
+                            <connections>
+                                <action selector="loveButtonClicked:" destination="-1" eventType="touchUpInside" id="GqS-pv-Z8e"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="1jN-w7-qn0" secondAttribute="bottom" id="75F-sy-fan"/>
+                        <constraint firstItem="3Cy-cr-l8g" firstAttribute="top" secondItem="aKM-YT-W3c" secondAttribute="top" id="7tw-YL-BAI"/>
+                        <constraint firstItem="1jN-w7-qn0" firstAttribute="leading" secondItem="3Cy-cr-l8g" secondAttribute="trailing" id="AZW-Vx-xa9"/>
+                        <constraint firstItem="bcY-As-eds" firstAttribute="top" secondItem="aKM-YT-W3c" secondAttribute="top" id="Qo4-6e-CbN"/>
+                        <constraint firstAttribute="bottom" secondItem="3Cy-cr-l8g" secondAttribute="bottom" id="S1n-6Z-6Xw"/>
+                        <constraint firstItem="3Cy-cr-l8g" firstAttribute="leading" secondItem="bcY-As-eds" secondAttribute="trailing" id="cFx-CS-H0w"/>
+                        <constraint firstItem="pyK-eI-09u" firstAttribute="leading" secondItem="aKM-YT-W3c" secondAttribute="leading" constant="15" id="eyj-vS-tdp"/>
+                        <constraint firstItem="bcY-As-eds" firstAttribute="leading" secondItem="pyK-eI-09u" secondAttribute="trailing" constant="20" id="i7k-P8-ElU"/>
+                        <constraint firstAttribute="trailing" secondItem="1jN-w7-qn0" secondAttribute="trailing" id="j45-SG-GaN"/>
+                        <constraint firstItem="pyK-eI-09u" firstAttribute="centerY" secondItem="aKM-YT-W3c" secondAttribute="centerY" id="kwP-mm-ng4"/>
+                        <constraint firstAttribute="bottom" secondItem="bcY-As-eds" secondAttribute="bottom" id="l4a-zO-1Yg"/>
+                        <constraint firstAttribute="height" constant="40" id="mxN-lV-8HO"/>
+                        <constraint firstItem="1jN-w7-qn0" firstAttribute="top" secondItem="aKM-YT-W3c" secondAttribute="top" id="q54-0t-8Is"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aKM-YT-W3c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qlw-jX-bHe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aKM-YT-W3c" secondAttribute="bottom" id="UTY-pj-JXN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aKM-YT-W3c" secondAttribute="trailing" id="fBL-Ug-Ivi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="comment_video_20x20_" width="20" height="20"/>
+        <image name="love_video_20x20_" width="20" height="20"/>
+        <image name="tab_share_24x24_" width="24" height="24"/>
+        <image name="tabbar_icon_emoji_24x24_" width="24" height="24"/>
+        <image name="write_new_24x24_" width="24" height="24"/>
+    </resources>
+</document>

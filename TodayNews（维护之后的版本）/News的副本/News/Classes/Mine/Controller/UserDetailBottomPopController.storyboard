@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Detail Bottom Pop Controller-->
+        <scene sceneID="1xy-VG-4aN">
+            <objects>
+                <viewController storyboardIdentifier="UserDetailBottomPopController" id="ByS-gL-iAd" customClass="UserDetailBottomPopController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OEe-sf-MNS"/>
+                        <viewControllerLayoutGuide type="bottom" id="pGe-Uo-aky"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8gb-mC-xuw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_118x58_" translatesAutoresizingMaskIntoConstraints="NO" id="dAi-ZH-8P1">
+                                <rect key="frame" x="-10" y="20" width="395" height="647"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d7a-JM-ePp">
+                                <rect key="frame" x="0.0" y="30" width="375" height="622"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ByS-gL-iAd" id="yZk-w3-xb8"/>
+                                    <outlet property="delegate" destination="ByS-gL-iAd" id="QQU-pp-Wcb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dAi-ZH-8P1" firstAttribute="leading" secondItem="8gb-mC-xuw" secondAttribute="leading" constant="-10" id="36o-zL-AJq"/>
+                            <constraint firstItem="d7a-JM-ePp" firstAttribute="top" secondItem="OEe-sf-MNS" secondAttribute="bottom" constant="10" id="57N-90-2kd"/>
+                            <constraint firstItem="pGe-Uo-aky" firstAttribute="top" secondItem="d7a-JM-ePp" secondAttribute="bottom" constant="15" id="CyC-ZK-5SS"/>
+                            <constraint firstAttribute="trailing" secondItem="d7a-JM-ePp" secondAttribute="trailing" id="GG2-ri-zpr"/>
+                            <constraint firstAttribute="trailing" secondItem="dAi-ZH-8P1" secondAttribute="trailing" constant="-10" id="PGe-Xh-jYa"/>
+                            <constraint firstItem="dAi-ZH-8P1" firstAttribute="top" secondItem="OEe-sf-MNS" secondAttribute="bottom" id="Sy4-6U-qwl"/>
+                            <constraint firstItem="pGe-Uo-aky" firstAttribute="top" secondItem="dAi-ZH-8P1" secondAttribute="bottom" id="gIO-mG-FIc"/>
+                            <constraint firstItem="d7a-JM-ePp" firstAttribute="leading" secondItem="8gb-mC-xuw" secondAttribute="leading" id="oQi-fK-Iff"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="d7a-JM-ePp" id="Dhw-Lx-1ry"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ksr-xa-pzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-260" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popup_118x58_" width="118" height="58"/>
+    </resources>
+</document>

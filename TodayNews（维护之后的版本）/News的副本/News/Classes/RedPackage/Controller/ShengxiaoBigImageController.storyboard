@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shengxiao Big Image Controller-->
+        <scene sceneID="pkg-VP-Jot">
+            <objects>
+                <viewController storyboardIdentifier="ShengxiaoBigImageController" id="FMY-6b-1Ff" customClass="ShengxiaoBigImageController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q2W-2s-pah">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwr-Mm-fxw">
+                                <rect key="frame" x="165.5" y="20" width="44.5" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="yuH-m3-vWU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.92549019610000005" blue="0.4549019608" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byy-0W-K57">
+                                <rect key="frame" x="0.0" y="57" width="375" height="610"/>
+                                <state key="normal" backgroundImage="card_front_big"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pwr-Mm-fxw" firstAttribute="centerX" secondItem="q2W-2s-pah" secondAttribute="centerX" id="HnO-lX-GQa"/>
+                            <constraint firstItem="Quv-5d-82X" firstAttribute="trailing" secondItem="byy-0W-K57" secondAttribute="trailing" id="cLW-Go-BzU"/>
+                            <constraint firstItem="Quv-5d-82X" firstAttribute="bottom" secondItem="byy-0W-K57" secondAttribute="bottom" id="reZ-KQ-aeG"/>
+                            <constraint firstItem="byy-0W-K57" firstAttribute="top" secondItem="pwr-Mm-fxw" secondAttribute="bottom" constant="15" id="s7E-aO-ylG"/>
+                            <constraint firstItem="pwr-Mm-fxw" firstAttribute="top" secondItem="Quv-5d-82X" secondAttribute="top" id="ttd-lU-Fj5"/>
+                            <constraint firstItem="byy-0W-K57" firstAttribute="leading" secondItem="Quv-5d-82X" secondAttribute="leading" id="zyq-xf-C3n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Quv-5d-82X"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="_dismissalAnimationType" value="Zoom"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="_presentationAnimationType" value="Zoom"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="imageButton" destination="byy-0W-K57" id="scZ-er-MdK"/>
+                        <outlet property="shengxiaoTitleLabel" destination="pwr-Mm-fxw" id="kng-dx-eON"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pex-1a-v9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436" y="145"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card_front_big" width="216" height="312"/>
+    </resources>
+</document>

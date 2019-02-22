@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RelationRecommendView" customModule="News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="233"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相关推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vez-hP-3ar">
+                    <rect key="frame" x="15" y="0.0" width="360" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="WAK-N7-4Il"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0zE-TE-MEj">
+                    <rect key="frame" x="0.0" y="32" width="375" height="201"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YTH-GE-boH">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vez-hP-3ar" secondAttribute="trailing" id="5Zd-HC-adY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0zE-TE-MEj" secondAttribute="trailing" id="ENZ-uk-f1y"/>
+                <constraint firstItem="Vez-hP-3ar" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Hcb-Wk-tWI"/>
+                <constraint firstItem="0zE-TE-MEj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="QLv-2e-iqX"/>
+                <constraint firstItem="0zE-TE-MEj" firstAttribute="top" secondItem="Vez-hP-3ar" secondAttribute="bottom" id="dJH-5b-kgy"/>
+                <constraint firstItem="Vez-hP-3ar" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="eJh-5w-q7U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0zE-TE-MEj" secondAttribute="bottom" id="yX5-he-vr6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionView" destination="0zE-TE-MEj" id="GUf-I2-yn4"/>
+                <outlet property="labelHeight" destination="WAK-N7-4Il" id="Kqb-Xr-YK7"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="230"/>
+        </view>
+    </objects>
+</document>
