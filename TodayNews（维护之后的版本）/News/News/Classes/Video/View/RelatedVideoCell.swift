@@ -49,9 +49,10 @@ class RelatedVideoCell: UITableViewCell, RegisterCellFromNib {
     @IBOutlet weak var playCountLabel: UILabel!
     /// 缩略图
     @IBOutlet weak var thumbImageView: UIImageView!
-    @IBOutlet weak var thumbImageViewWidth: NSLayoutConstraint!
+    @IBOutlet var thumbImageViewWidth: NSLayoutConstraint!
     /// 时长
     @IBOutlet weak var timeLabel: UILabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()

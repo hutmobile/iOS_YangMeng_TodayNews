@@ -60,11 +60,15 @@ extension SettingCell {
     /// 从沙盒中获取缓存数据的大小
     func calculateDiskCashSize() {
         let cache = KingfisherManager.shared.cache
-        cache.calculateDiskCacheSize { (size) in
-            // 转换成 M
-            let sizeM = Double(size) / 1024.0 / 1024.0
+//        cache.calculateDiskCacheSize { (size) in
+//            // 转换成 M
+//            let sizeM = Double(size) / 1024.0 / 1024.0
+//            self.rightTitleLabel.text = String(format: "%.2fM", sizeM)
+//        }
+        cache.calculateDiskStorageSize(completion: {
+            let sizeM = Double($0.value ?? 0) / 1024.0 / 1024.0
             self.rightTitleLabel.text = String(format: "%.2fM", sizeM)
-        }
+        })
     }
     /// 非 WiFi 网络播放提醒
     func setupPlayNoticeAlertController() {

@@ -36,19 +36,32 @@ class PreviewDongtaiBigImageController: UIViewController {
     /// 保存图片
     @IBAction func saveButtonClicked(_ sender: UIButton) {
         let largeImage = images[selectedIndex]
-        ImageDownloader.default.downloadImage(with: URL(string: largeImage.urlString)!, progressBlock: { (receivedSize, totalSize) in
+//        ImageDownloader.default.downloadImage(with: URL(string: largeImage.urlString)!, progressBlock: { (receivedSize, totalSize) in
+//            // 获取当前进度
+//            let progress = Float(receivedSize) / Float(totalSize)
+//            SVProgressHUD.showProgress(progress)
+//        }) { (image, error, imageURL, data) in
+//            // 调用系统相册，保存到相册
+//            PHPhotoLibrary.shared().performChanges({
+//                PHAssetChangeRequest.creationRequestForAsset(from: image!)
+//            }, completionHandler: { (success, error) in
+//                SVProgressHUD.dismiss()
+//                if success { SVProgressHUD.showSuccess(withStatus: "保存成功!") }
+//            })
+//        }
+    
+        ImageDownloader.default.downloadImage(with: URL(string: largeImage.urlString)!, options: nil, progressBlock: { (receivedSize, totalSize) in
             // 获取当前进度
             let progress = Float(receivedSize) / Float(totalSize)
             SVProgressHUD.showProgress(progress)
-        }) { (image, error, imageURL, data) in
-            // 调用系统相册，保存到相册
+        }, completionHandler: {(result) in
             PHPhotoLibrary.shared().performChanges({
-                PHAssetChangeRequest.creationRequestForAsset(from: image!)
+                PHAssetChangeRequest.creationRequestForAsset(from: result.value?.image ?? UIImage())
             }, completionHandler: { (success, error) in
                 SVProgressHUD.dismiss()
                 if success { SVProgressHUD.showSuccess(withStatus: "保存成功!") }
             })
-        }
+        })////
     }
     
     override func didReceiveMemoryWarning() {
