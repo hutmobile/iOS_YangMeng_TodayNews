@@ -7,7 +7,7 @@
 其仿写了今日头条这个比较有名的app, 当然啦，大多仿写的是今日头条2018年上半年的版本
 
 不过较为可惜的是，或许是他较为繁忙，这个项目已经有一年没更新了
-由于这个项目有较大的参考和学习的价值，本人稍稍对其进行了维护，让项目能运行起来，使用的是swift4
+由于这个项目有较大的参考和学习的价值，本人稍稍对其进行了维护，让项目能运行起来，使用的是swift4.2,最新的swift版本
 
 值得一提的是由于今日头条的更新迭代，这个仿写的app中有一小部分（如“微头条”）的接口已经失效（我就不找
 新的接口了），
@@ -21,17 +21,17 @@
 
 # 功能截图。
 
-![](TodayNews（维护之后的版本）/asset/11.gif)
-![](TodayNews（维护之后的版本）/asset/10.gif)
-![](TodayNews（维护之后的版本）/asset/1.gif)
-![](TodayNews（维护之后的版本）/asset/2.gif)
-![](TodayNews（维护之后的版本）/asset/3.gif)
-![](TodayNews（维护之后的版本）/asset/4.gif)
-![](TodayNews（维护之后的版本）/asset/5.gif)
-![](TodayNews（维护之后的版本）/asset/6.gif)
-![](TodayNews（维护之后的版本）/asset/7.gif)
-![](TodayNews（维护之后的版本）/asset/8.gif)
-![](TodayNews（维护之后的版本）/asset/9.gif)
+![](TodayNews(AfterMaintenance)/asset/11.gif)
+![](TodayNews(AfterMaintenance)/asset/10.gif)
+![](TodayNews(AfterMaintenance)/asset/1.gif)
+![](TodayNews(AfterMaintenance)/asset/2.gif)
+![](TodayNews(AfterMaintenance)/asset/3.gif)
+![](TodayNews(AfterMaintenance)/asset/4.gif)
+![](TodayNews(AfterMaintenance)/asset/5.gif)
+![](TodayNews(AfterMaintenance)/asset/6.gif)
+![](TodayNews(AfterMaintenance)/asset/7.gif)
+![](TodayNews(AfterMaintenance)/asset/8.gif)
+![](TodayNews(AfterMaintenance)/asset/9.gif)
 
 
 # 实现功能
